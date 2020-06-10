@@ -47,6 +47,10 @@ window.addEventListener("offline", () => window.alert("For full immersive experi
 
 
 window.addEventListener('load',function(){
-    audio.muted = false;
-    audio.play();
+    const permission = confirm('Allow to Play Audio for Immersive Experience');
+    if(permission){
+        audio.muted = false;
+        audio.play();
+    }
 })
+
