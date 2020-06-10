@@ -13,7 +13,7 @@ const totalTime = 6000;
 const breathTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
-
+breathAnimation();
 
 function breathAnimation() {
   text.innerText = "Breath In!";
@@ -41,7 +41,7 @@ function breathAnimation() {
   }, breathTime);
 }
 
-
+setInterval(breathAnimation, totalTime);
 
 window.addEventListener("online", () =>
   window.alert("Now You can experience this app at it's Best 👍")
@@ -55,8 +55,6 @@ window.addEventListener("offline", () =>
 window.addEventListener("load", function () {
   audio.muted = false;
   audio.play();
-  breathAnimation();
-  setInterval(breathAnimation, totalTime);
   // const permission = confirm('Allow to Play Audio for Immersive Experience');
   // if(permission){
   //     audio.muted = false;
