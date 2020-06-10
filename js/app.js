@@ -5,7 +5,8 @@ const circle = document.querySelector(".circle");
 
 var audio = new Audio("./../assets/om-edited.mp3");
 audio.loop = true;
-audio.play();
+audio.muted = true;
+
 
 const totalTime = 6000;
 const breathTime = (totalTime / 5) * 2;
@@ -43,3 +44,9 @@ setInterval(breathAnimation, totalTime);
 
 window.addEventListener("online", () => window.alert("Now You can experience this app at it's Best 👍"));
 window.addEventListener("offline", () => window.alert("For full immersive experience use with an internet connection ⚡"));
+
+
+window.addEventListener('load',function(){
+    audio.muted = false;
+    audio.play();
+})

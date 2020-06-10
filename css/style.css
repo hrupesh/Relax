@@ -50,6 +50,8 @@ h1 {
   font-size: 3rem;
   text-shadow: 0px 0px 20px #010f1c;
   letter-spacing: 35px;
+  position: absolute;
+  color: #203d20;
 }
 
 .container {
