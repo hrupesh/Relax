@@ -3,7 +3,9 @@ const text = document.querySelector("#text");
 const pointer = document.querySelector(".pointer");
 const circle = document.querySelector(".circle");
 
-var audio = new Audio("./../assets/om-edited.mp3");
+console.log(document.baseURI);
+
+var audio = new Audio(document.baseURI+"assets/om-edited.mp3");
 audio.loop = true;
 audio.muted = true;
 
