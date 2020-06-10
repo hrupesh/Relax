@@ -5,10 +5,9 @@ const circle = document.querySelector(".circle");
 
 console.log(document.baseURI);
 
-var audio = new Audio(document.baseURI+"assets/om-edited.mp3");
+var audio = new Audio(document.baseURI + "assets/om-edited.mp3");
 audio.loop = true;
 audio.muted = true;
-
 
 const totalTime = 6000;
 const breathTime = (totalTime / 5) * 2;
@@ -44,15 +43,21 @@ function breathAnimation() {
 
 setInterval(breathAnimation, totalTime);
 
-window.addEventListener("online", () => window.alert("Now You can experience this app at it's Best 👍"));
-window.addEventListener("offline", () => window.alert("For full immersive experience use with an internet connection ⚡"));
+window.addEventListener("online", () =>
+  window.alert("Now You can experience this app at it's Best 👍")
+);
+window.addEventListener("offline", () =>
+  window.alert(
+    "For full immersive experience use with an internet connection ⚡"
+  )
+);
 
-
-window.addEventListener('load',function(){
-    const permission = confirm('Allow to Play Audio for Immersive Experience');
-    if(permission){
-        audio.muted = false;
-        audio.play();
-    }
-})
-
+window.addEventListener("load", function () {
+  audio.muted = false;
+  audio.play();
+  // const permission = confirm('Allow to Play Audio for Immersive Experience');
+  // if(permission){
+  //     audio.muted = false;
+  //     audio.play();
+  // }
+});
