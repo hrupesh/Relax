@@ -2,13 +2,18 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Nunito', sans-serif;
     transition: all 0.5s;
-    user-select: none; /* supported by Chrome and Opera */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
 }
 
 html,
@@ -17,8 +22,8 @@ body {
     padding: 0;
 }
 
-body{
-    background: #224941 url('https://picsum.photos/1440') no-repeat center/cover;
+body {
+    background: #224941 url('https://picsum.photos/1440')  no-repeat center/cover;
     color: #fff;
     min-height: 100vh;
     overflow: hidden;
@@ -28,20 +33,20 @@ body{
     margin: 0;
 }
 
-#text{
+#text {
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
-h1{
+h1 {
     font-size: 3rem;
     text-shadow: 0px 0px 20px #010f1c;
     letter-spacing: 35px;
     position: absolute;
-    color: rgb(32, 61, 32);
+    color: rgb(255, 255, 255);
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,54 +58,52 @@ h1{
 
 }
 
-.grow{
+.grow {
     animation: grow 2400ms linear forwards;
 }
 
-.shrink{
+.shrink {
     animation: shrink 2400ms linear forwards;
 }
 
-.gradient-circle{
-    background: conic-gradient(
-        #b85a4d 0%,
-        #b16659 40%,
-        rgb(246, 236, 89) 40%,
-        rgb(243, 236, 131) 60%,
-        #63c859 60%,
-        #76c77a 100%
-    );
+.gradient-circle {
+    background: conic-gradient(#b85a4d 0%,
+            #b16659 40%,
+            rgb(246, 236, 89) 40%,
+            rgb(243, 236, 131) 60%,
+            #63c859 60%,
+            #76c77a 100%);
     height: 320px;
     width: 320px;
     position: absolute;
-    top:-10px;
-    left:-10px;
+    top: -10px;
+    left: -10px;
     z-index: -2;
     border-radius: 50%;
 }
 
-.circle{
+.circle {
     background-color: #010f1c;
     height: 100%;
     width: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: -1;
     border-radius: 50%;
 }
 
-.pointer-container{
+.pointer-container {
     position: absolute;
     top: -40px;
-    left:140px;
-    width:20px;
+    left: 140px;
+    width: 20px;
     height: 190px;
     animation: rotate linear 6s forwards infinite;
     transform-origin: bottom center;
 }
 
-.pointer{
+.pointer {
     background-color: white;
     border-radius: 50%;
     height: 20px;
@@ -108,47 +111,50 @@ h1{
     display: block;
 }
 
-@keyframes rotate{
-    from{
+@keyframes rotate {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
 
-@keyframes grow{
-    from{
+@keyframes grow {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.2);
     }
 }
 
-@keyframes shrink{
-    from{
+@keyframes shrink {
+    from {
         transform: scale(1.2);
     }
-    to{
+
+    to {
         transform: scale(1);
     }
 }
 
-@media (max-width:600px){
-    .container{
+@media (max-width:600px) {
+    .container {
         height: 200px;
-        width:200px;
+        width: 200px;
     }
 
-    .gradient-circle{
+    .gradient-circle {
         width: 220px;
         height: 220px;
     }
 
-    .pointer-container{
-        top:-40px;
-        left:90px;
+    .pointer-container {
+        top: -40px;
+        left: 90px;
         height: 140px;
     }
 }

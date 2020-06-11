@@ -52,9 +52,20 @@ window.addEventListener("offline", () =>
   )
 );
 
+
 window.addEventListener("load", function () {
   audio.muted = false;
   audio.play();
+
+  const b = document.getElementById("b");
+  if (!navigator.onLine) {
+    window.alert(
+      "For full immersive experience use with an internet connection ⚡"
+    );
+    b.style.background =
+      "#224941 url('../assets/fallback-bg.jpg')  no-repeat center/cover";
+  }
+
   // const permission = confirm('Allow to Play Audio for Immersive Experience');
   // if(permission){
   //     audio.muted = false;
