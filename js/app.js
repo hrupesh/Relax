@@ -63,7 +63,7 @@ window.addEventListener("load", function () {
       "For full immersive experience use with an internet connection ⚡"
     );
     b.style.background =
-      "('/assets/fallback-bg.jpg')  no-repeat center/cover";
+      "url(assets/fallback-bg.jpg)  no-repeat center/cover";
   }
 
   // const permission = confirm('Allow to Play Audio for Immersive Experience');
