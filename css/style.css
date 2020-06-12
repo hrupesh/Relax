@@ -83,7 +83,7 @@ h1 {
 }
 
 .gradient-circle {
-  background: conic-gradient(#b85a4d 0%, #b16659 40%, #f6ec59 40%, #f3ec83 60%, #63c859 60%, #76c77a 100%);
+  background: conic-gradient(#536dfea3 0%, #f152529c 40%, #2d475a 40%, #2a4054 60%, #00bcd4a8 60%, #73e4799e 100%);
   height: 320px;
   width: 320px;
   position: absolute;
