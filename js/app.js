@@ -16,7 +16,7 @@ const holdTime = totalTime / 5;
 breathAnimation();
 
 function breathAnimation() {
-  text.innerText = "Breath In!";
+  text.innerText = " Inhale ";
   // console.log('Breath In.........');
   // document.body.style.background = 'linear-gradient(135deg,red 5%,green 75%)';
   container.className = "container grow";
@@ -24,14 +24,14 @@ function breathAnimation() {
   circle.style.backgroundColor = "#21120f";
 
   setTimeout(() => {
-    text.innerText = "Hold!";
+    text.innerText = " Pause ";
     pointer.style.backgroundColor = "rgb(243, 233, 100";
     circle.style.backgroundColor = "#252412";
     // console.log('Hoollllllld!');
     // document.body.style.background = 'linear-gradient(135deg,green 5%,red 75%)';
 
     setTimeout(() => {
-      text.innerText = "Breath Out!";
+      text.innerText = " Exhale Slowly ";
       pointer.style.backgroundColor = "rgb(149, 207, 82)";
       circle.style.backgroundColor = "#101d0f";
       // console.log('Breathe Out........');
