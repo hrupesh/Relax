@@ -10,7 +10,7 @@
     "background_color": "#536DFE",
     "icons": [
       {
-        "src": "./assets/icon.png",
+        "src": "./assets/1024.png",
         "sizes": "1024x1024"
       },
       {
